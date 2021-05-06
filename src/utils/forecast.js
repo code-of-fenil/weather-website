@@ -17,7 +17,9 @@ const forecast= (latitude,longitude,callback) =>{
                 // Temperature: response.body.current.Temperature,
                 // Location: response.body.current.location.region
             //}
-            response.body.current.weather_descriptions[0] + ". It is currently " + response.body.current.temperature + " degrees out, But it feels like " + response.body.current.feelslike)
+            response.body.current.weather_descriptions[0] + ". It is currently " + response.body.current.temperature + " degrees out, But it feels like " + response.body.current.feelslike +
+            ", humidity is " + response.body.current.humidity + ". And wind speed is " + response.body.current.wind_speed + " Km/h.")
+
         }
     })
 } 
